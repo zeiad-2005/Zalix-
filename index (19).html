@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>zalix</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زاليكس - متجر المنتجات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding:20px 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 300px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        .container {
+            padding: 10
+                px;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #f0c040;
+            color: #000;
+        }
+
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="z.jpg"شعار زاليكس">
+    
+    </header>
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="container">
+        <h2>اختر القسم الذي ترغب في زيارته</h2>
+        <div class="buttons">
+            <button id="btn-medals">الميداليات</button>
+            <button id="btn-hoodies">الهوديز</button>
+            <button id="btn-stickers">الاستيكرات</button>
+        </div>
+    </div>
+    <section id="medals">
+        <h2>قسم الميداليات</h2>
+        <p>هنا يمكنك استعراض جميع الميداليات المميزة لدينا.</p>
+    </section>
+    <section id="hoodies">
+        <h2>قسم الهوديز</h2>
+        <p>تصفح تشكيلتنا الرائعة من الهوديز.</p>
+    </section>
+    <section id="stickers">
+        <h2>قسم الاستيكرات</h2>
+        <p>استعرض استيكراتنا الفريدة والجذابة.</p>
+    </section>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025</p>
+    </footer>
+
+    <script>
+        // جلب الأزرار
+        const btnMedals = document.getElementById('btn-medals');
+        const btnHoodies = document.getElementById('btn-hoodies');
+        const btnStickers = document.getElementById('btn-stickers');
+
+        // إضافة وظائف التنقل السلس
+        btnMedals.addEventListener('click', () => {
+            document.getElementById('medals').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        btnHoodies.addEventListener('click', () => {
+            document.getElementById('hoodies').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        btnStickers.addEventListener('click', () => {
+            document.getElementById('stickers').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+  <script src="script.js"></script>
+</body>
+
+</html>
